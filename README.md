@@ -1,8 +1,12 @@
 # translations-manager
 manage translations that will be categorized by project, category, language, key
 
-##exptected structure in mongodb:
-```{"projects" : {
+This service will (hopefully when done) expose an API that will enable you to manage your translations. 
+UI is not part of the current plans. 
+
+## exptected structure in mongodb:
+```
+{"projects" : {
     "appmodules" : 
         {
             "Categories" : [],

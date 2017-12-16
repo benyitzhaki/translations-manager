@@ -15,6 +15,6 @@ namespace TranslationManagerApi.Interfaces
         DateTime CreatedTime { get; set; }
         DateTime UpdateTime { get; set; }
         
-        IList<ILangKey> LangKeys { get; set; }
+        IEnumerable<ILangKey> LangKeys { get; set; }
     }
 }
