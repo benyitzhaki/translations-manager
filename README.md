@@ -16,3 +16,11 @@ UI is not part of the current plans.
   }
 }
 ```
+# TODO (by priority):
+ - create interfaces
+ - create mongodb connection
+ - create models
+ - create controllers
+ - add swagger ui
+ - dockerize mongodb
+ - dockerzie project
