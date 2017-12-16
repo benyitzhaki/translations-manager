@@ -22,5 +22,6 @@ UI is not part of the current plans.
  - create models
  - create controllers
  - add swagger ui
+ - consider seperating dal to a seperate project
  - dockerize mongodb
  - dockerzie project
