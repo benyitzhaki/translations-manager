@@ -25,6 +25,5 @@ UI is not part of the current plans.
  - cache?
  - protect api from too many requests etc
  - add authentication (users should be able to implemnet own login so they can use own user directories)
- - consider seperating dal to a seperate project
  - dockerize mongodb
  - dockerzie project

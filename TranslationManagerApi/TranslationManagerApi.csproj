@@ -7,12 +7,17 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="MongoDB.Driver.Core" Version="2.5.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Private.CoreLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TranslatonManagerDal\TranslatonManagerDal.csproj">
+      <Project>{4D48BD37-6FE9-4D18-A047-4CE7BB226A2E}</Project>
+      <Name>TranslatonManagerDal</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

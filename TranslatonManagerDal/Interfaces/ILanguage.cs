@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TranslationManagerApi.Interfaces
+namespace TranslatonManagerDal.Interfaces
 {
     public interface ILanguage
     {
         int Id { get; set; }
+        
         int ProjectId { get; set; }
+        
         string Name { get; set; }
         
-        // used to identify the language by api (for English we would use en)
-        string LangCode { get; set; }
+        string LanguageKey { get; set; }
         
         DateTime CreatedTime { get; set; }
+        
         DateTime UpdateTime { get; set; }
         
-        IEnumerable<ILangKey> LangKeys { get; set; }
+        IEnumerable<ITranslation> Translations { get; set; }
     }
 }

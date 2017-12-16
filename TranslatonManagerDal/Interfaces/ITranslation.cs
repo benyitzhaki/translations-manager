@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace TranslationManagerApi.Interfaces
+namespace TranslatonManagerDal.Interfaces
 {
-    public interface ILangKey
+    public interface ITranslation
     {
         int Id { get; set; }
+
         int ProjectId { get; set; }
         
-        // code used in our application as key for translation (for example: "Error.MissingFirstName")
-        string KeyCode { get; set; }
+        string TranslationKey { get; set; }
         
         string Description { get; set; }
         
