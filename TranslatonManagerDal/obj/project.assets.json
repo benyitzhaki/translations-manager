@@ -2713,6 +2713,22 @@
           "lib/netstandard1.5/MongoDB.Bson.dll": {}
         }
       },
+      "MongoDB.Driver/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Bson": "2.5.0",
+          "MongoDB.Driver.Core": "2.5.0",
+          "NETStandard.Library": "1.6.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/MongoDB.Driver.dll": {}
+        }
+      },
       "MongoDB.Driver.Core/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -7642,6 +7658,20 @@
         "lib/netstandard1.5/MongoDB.Bson.xml",
         "mongodb.bson.2.5.0.nupkg.sha512",
         "mongodb.bson.nuspec"
+      ]
+    },
+    "MongoDB.Driver/2.5.0": {
+      "sha512": "VbHVV8Xdl3PcPU3XxdOUE/yc4BnPokg7k1XHU/3fEM/UdfCy0Ie0eXVE+U2HJXVcM3TQuuyVn+B1La2YY7X8dA==",
+      "type": "package",
+      "path": "mongodb.driver/2.5.0",
+      "files": [
+        "License.rtf",
+        "lib/net45/MongoDB.Driver.dll",
+        "lib/net45/MongoDB.Driver.xml",
+        "lib/netstandard1.5/MongoDB.Driver.dll",
+        "lib/netstandard1.5/MongoDB.Driver.xml",
+        "mongodb.driver.2.5.0.nupkg.sha512",
+        "mongodb.driver.nuspec"
       ]
     },
     "MongoDB.Driver.Core/2.5.0": {
@@ -13030,7 +13060,8 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "MongoDB.Driver.Core >= 2.5.0"
+      "MongoDB.Bson >= 2.5.0",
+      "MongoDB.Driver >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -13071,7 +13102,11 @@
             "target": "Package",
             "version": "2.0.0"
           },
-          "MongoDB.Driver.Core": {
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "2.5.0"
+          },
+          "MongoDB.Driver": {
             "target": "Package",
             "version": "2.5.0"
           }

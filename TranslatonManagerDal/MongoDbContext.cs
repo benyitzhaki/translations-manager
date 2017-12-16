@@ -1,24 +1,26 @@
 ﻿using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
 namespace TranslatonManagerDal
 {
     public class MonngoDbContext
     {
-        private readonly IMongoDatabase _database = null;
+        private IMongoDatabase _context;
 
         public MonngoDbContext(IOptions<Settings> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             if (client != null)
-                _database = client.GetDatabase(settings.Value.Database);
+                _context = client.GetDatabase(settings.Value.Database);        
         }
-
-        public IMongoCollection<Note> Notes
+        
+        /*public IMongoCollection<Note> Notes
         {
             get
             {
                 return _database.GetCollection<Note>("Note");
             }
-        }
+        }*/
+        
     }
 }

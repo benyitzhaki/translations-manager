@@ -21,6 +21,7 @@ UI is not part of the current plans.
  - create mongodb connection
  - create models
  - create controllers
+ - inject Settings (create interface)
  - add swagger ui
  - cache?
  - protect api from too many requests etc

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace TranslatonManagerDal.Interfaces
 {
@@ -23,5 +24,9 @@ namespace TranslatonManagerDal.Interfaces
         IDictionary<string, IDictionary<string, ITranslation>> GetTranslationsByLanguageKey(string LanguageKey);
         
         IDictionary<string, IDictionary<string, ITranslation>> GetAllLanguagesTranslations();
+        
+        Task<IProject> Get(string ProjectCode);
+        void Save();
+        void Delete();
     }
 }
