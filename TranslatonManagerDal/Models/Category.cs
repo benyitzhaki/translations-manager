@@ -19,12 +19,12 @@ namespace TranslatonManagerDal.Models
         public string Name { get; set; }
         
         [BsonElement("description")]
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
         
         [BsonElement("create_time")]
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         
         [BsonElement("update_time")]
-        public DateTime UpdateTime { get; set; }
+        public DateTime UpdateTime { get; set; } = DateTime.Now;
     }
 }

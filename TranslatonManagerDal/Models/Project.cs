@@ -31,10 +31,10 @@ namespace TranslatonManagerDal.Models
         public string ProjectCode { get; set; }
         
         [BsonElement("update_time")]
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; }  = DateTime.Now;
         
         [BsonElement("create_time")]
-        public DateTime UpdateTime { get; set; }
+        public DateTime UpdateTime { get; set; }  = DateTime.Now;
         
         [BsonElement("categories")]
         public IEnumerable<ICategory> Categories { get; set; }
